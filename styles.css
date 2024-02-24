@@ -1,0 +1,1399 @@
+@import url('https://fonts.googleapis.com/css2?family=Caesar+Dressing&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    color: #0927da;
+    font-family: sytem;
+}
+main video{
+    width: 100%;
+
+}
+#mobilvideo{
+    height: 100%;
+}
+
+#logovideo{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    z-index: 10;
+}
+
+body{
+    background-color: #000;
+    height: auto;
+}
+
+
+/*ALT herunder handler om flavours og drinks knapperne*/
+.top-circle{
+    width: 234px;
+    height: 234px;
+    background: royalblue;
+    border-radius: 50%;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    z-index: 50;
+    margin: -134px 0 0 -117px;
+}
+
+.top-circle a{
+    width: 100%;
+    color: #fff;
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    display: block;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 800;
+    font-size: 32px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+
+.bottom-circle {
+    width: 234px;
+    height: 234px;
+    background: royalblue;
+    border-radius: 50%;
+    text-align: center;
+    position: fixed;
+    bottom: -144px;
+    left: 50%;
+    z-index: 49;
+    margin-left: -117px;
+}
+.bottom-circle a {
+    width: 100%;
+    color: #fff;
+    position: absolute;
+    top: 23px;
+    left: 0;
+    display: block;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 800;
+    font-size: 32px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+/*--Dropdown--*/
+.dropbtn{
+    background-color: rgba(0, 74, 164, 1);
+    position: relative;
+    right: 0%;
+    color: #fff;
+    padding-top: 5px;
+    font-size: 100%;
+    border: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+    padding-left: 3%;
+    float: left;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 300px;
+    min-height: 350px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a{
+  color: #000;
+  padding: 12px 16px;
+  display: block;
+  text-align: left;
+  font-size: 70%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.dropdown-content a:hover{background-color: #ddd;}
+.dropdown:hover .dropdown-content{display: block;}
+.dropdown:hover .dropbtn{background-color: rgba(0, 74, 164, 1);}
+
+
+
+
+/*--ALT HERUNDER HANDLER OM DEN SIDE HVOR FLASKERNE ER--*/
+.flaskeheader{
+    background-color: rgba(0, 74, 164, 1);
+    height: 50px;
+    width: 100%;
+    font-weight: 800;
+}
+.flaskeheader a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 5% 5%;
+    font-size: 30px;
+}
+.burgermenu{
+    margin-left: 1140px;
+}
+.img-wrap{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.ydreflaske{
+    background-color: #fff;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    
+}
+.ydreflasketo{
+    background-color: #fff;
+    width: 100%;
+    align-items: center;
+
+}
+
+
+
+/*Flaskers tekst og farver er herunder*/
+.flaske_itempears{
+    background-color: rgba(48, 77, 26, 0.25);
+    border-radius: 3%;
+    width: 30%;
+    height: 90%;
+    cursor: pointer;
+}
+.flaske_itempears h3{
+    display: grid;
+    justify-content: center;
+    padding-top: 5%;
+    font-family: "Pathway Gothic One",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: rgba(41, 74, 23, 1);
+    text-transform: uppercase;
+}
+.flaske_itemwatermelon{
+    background-color: rgba(37, 127, 72, 0.25);
+    border-radius: 3%;
+    width: 30%;
+    height: 90%;
+    cursor: pointer;
+}
+.flaske_itemwatermelon h3{
+    display: grid;
+    justify-content: center;
+    padding-top: 5%;
+    font-family: "Pathway Gothic One",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: rgba(4, 132, 74, 1);
+    text-transform: uppercase;
+}
+.flaske_itempeppar{
+    background-color: rgba(244, 40, 37, 0.25);
+    border-radius: 3%;
+    width: 30%;
+    height: 90%;
+    cursor: pointer;
+}
+.flaske_itempeppar h3{
+    display: grid;
+    justify-content: center;
+    padding-top: 5%;
+    font-family: "Pathway Gothic One",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: rgba(255, 47, 48, 1);
+    text-transform: uppercase;
+}
+.flaske_itemraspberry{
+    background-color: rgba(249, 191, 220, 0.25);
+    border-radius: 3%;
+    width: 30%;
+    height: 90%;
+    cursor: pointer;
+}
+.flaske_itemraspberry h3{
+    display: grid;
+    justify-content: center;
+    padding-top: 5%;
+    font-family: "Pathway Gothic One",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: rgba(169, 2, 79, 1);
+    text-transform: uppercase;
+}
+.flaske_itemvanilla{
+    background-color: rgba(65, 39, 28, 0.25);
+    border-radius: 3%;
+    width: 30%;
+    height: 90%;
+    cursor: pointer;
+}
+.flaske_itemvanilla h3{
+    display: grid;
+    justify-content: center;
+    padding-top: 5%;
+    font-family: "Pathway Gothic One",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: rgba(66, 37, 24, 1);
+    text-transform: uppercase;
+}
+.flaske_itemwild{
+    background-color: rgba(188, 117, 193, 0.25);
+    border-radius: 3%;
+    width: 30%;
+    height: 90%;
+    cursor: pointer;
+}
+.flaske_itemwild h3{
+    display: grid;
+    justify-content: center;
+    padding-top: 5%;
+    font-family: "Pathway Gothic One",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: rgba(194, 112, 188, 1);
+    text-transform: uppercase;
+}
+.flaske_itempeach{
+    background-color: rgba(244, 220, 208, 0.25);
+    border-radius: 3%;
+    width: 30%;
+    height: 90%;
+    cursor: pointer;
+}
+.flaske_itempeach h3{
+    display: grid;
+    justify-content: center;
+    padding-top: 5%;
+    font-family: "Pathway Gothic One",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: rgba(249, 154, 95, 1);
+    text-transform: uppercase;
+}
+.flaske_itempassion{
+    background-color: rgba(119, 4, 87, 0.25);
+    border-radius: 3%;
+    width: 30%;
+    height: 90%;
+    cursor: pointer;
+}
+.flaske_itempassion h3{
+    display: grid;
+    justify-content: center;
+    padding-top: 5%;
+    font-family: "Pathway Gothic One",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: rgba(119, 0, 91, 1);
+    text-transform: uppercase;
+}
+.flaske_itemmango{
+    background-color: rgba(215, 174, 68, 0.25);
+    border-radius: 3%;
+    width: 30%;
+    height: 90%;
+    cursor: pointer;
+}
+.flaske_itemmango h3{
+    display: grid;
+    justify-content: center;
+    padding-top: 5%;
+    font-family: "Pathway Gothic One",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: rgba(58, 132, 7, 1);
+    text-transform: uppercase;
+}
+.flaske_itemlime{
+    background-color: rgba(61, 134, 0, 0.25);
+    border-radius: 3%;
+    width: 30%;
+    height: 90%;
+    cursor: pointer;
+}
+.flaske_itemlime h3{
+    display: grid;
+    justify-content: center;
+    padding-top: 5%;
+    font-family: "Pathway Gothic One",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: rgba(143, 169, 24, 1);
+    text-transform: uppercase;
+}
+.flaske_itemgrapefruit{
+    background-color: rgba(237, 206, 211, 0.25);
+    border-radius: 3%;
+    width: 30%;
+    height: 90%;
+    cursor: pointer;
+}
+.flaske_itemgrapefruit h3{
+    display: grid;
+    justify-content: center;
+    padding-top: 5%;
+    font-family: "Pathway Gothic One",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: rgba(239, 60, 93, 1);
+    text-transform: uppercase;
+}
+.flaske_itemcitron{
+    background-color: rgba(235, 254, 104, 0.25);
+    border-radius: 3%;
+    width: 30%;
+    height: 90%;
+    cursor: pointer;
+}
+.flaske_itemcitron h3{
+    display: grid;
+    justify-content: center;
+    padding-top: 5%;
+    font-family: "Pathway Gothic One",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: rgba(242, 213, 28, 1);
+    text-transform: uppercase;
+}
+
+
+
+/*--Hover effekt til kort på flaske side--*/
+.flaske_itempears:hover{
+    transform: scale(1.05, 1.05);
+    transition: 1s ease-out;
+    box-shadow: 0px 18px 16px 0px rgba(0, 0, 0, 0.2);
+}
+.flaske_itemwatermelon:hover{
+    transform: scale(1.05, 1.05);
+    transition: 1s ease-out;
+    box-shadow: 0px 18px 16px 0px rgba(0, 0, 0, 0.2);
+}
+.flaske_itempeppar:hover{
+    transform: scale(1.05, 1.05);
+    transition: 1s ease-out;
+    box-shadow: 0px 18px 16px 0px rgba(0, 0, 0, 0.2);
+}
+.flaske_itemraspberry:hover{
+    transform: scale(1.05, 1.05);
+    transition: 1s ease-out;
+    box-shadow: 0px 18px 16px 0px rgba(0, 0, 0, 0.2);
+}
+.flaske_itemvanilla:hover{
+    transform: scale(1.05, 1.05);
+    transition: 1s ease-out;
+    box-shadow: 0px 18px 16px 0px rgba(0, 0, 0, 0.2);
+}
+.flaske_itemwild:hover{
+    transform: scale(1.05, 1.05);
+    transition: 1s ease-out;
+    box-shadow: 0px 18px 16px 0px rgba(0, 0, 0, 0.2);
+}
+.flaske_itempeach:hover{
+    transform: scale(1.05, 1.05);
+    transition: 1s ease-out;
+    box-shadow: 0px 18px 16px 0px rgba(0, 0, 0, 0.2);
+}
+.flaske_itempassion:hover{
+    transform: scale(1.05, 1.05);
+    transition: 1s ease-out;
+    box-shadow: 0px 18px 16px 0px rgba(0, 0, 0, 0.2);
+}
+.flaske_itemmango:hover{
+    transform: scale(1.05, 1.05);
+    transition: 1s ease-out;
+    box-shadow: 0px 18px 16px 0px rgba(0, 0, 0, 0.2);
+}
+.flaske_itemlime:hover{
+    transform: scale(1.05, 1.05);
+    transition: 1s ease-out;
+    box-shadow: 0px 18px 16px 0px rgba(0, 0, 0, 0.2);
+}
+.flaske_itemgrapefruit:hover{
+    transform: scale(1.05, 1.05);
+    transition: 1s ease-out;
+    box-shadow: 0px 18px 16px 0px rgba(0, 0, 0, 0.2);
+}
+.flaske_itemcitron:hover{
+    transform: scale(1.05, 1.05);
+    transition: 1s ease-out;
+    box-shadow: 0px 18px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+/*--Her arbejder jeg med selve den side hvor drinks bliver præsenteret og der vil være tekst--*/
+.ydrecocktails{
+    background-color: #fff;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.ydrecocktailsto{
+    background-color: #fff;
+    width: 100%;
+    align-items: center;
+}
+.mangosoda{
+    background-color: rgba(252, 201, 201, 0.5);
+    border-radius: 3%;
+    width: 40%;
+    height: 90%;
+    cursor: pointer;
+}
+.mangosoda h3{
+    display: grid;
+    justify-content: center;
+    padding-top: 12%;
+    font-family: "Pathway Gothic One",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    color: rgba(255, 47, 48, 1);
+    text-transform: uppercase;
+}
+.mangosoda:hover{
+    transform: scale(1.05, 1.05);
+    transition: 1s ease-out;
+    box-shadow: 0px 18px 16px 0px rgba(0, 0, 0, 0.2);
+}
+.espressomartini{
+    background-color: rgba(188, 117, 193, 0.25);
+    border-radius: 3%;
+    width: 40%;
+    height: 90%;
+    cursor: pointer;
+}
+.espressomartini h3{
+    display: grid;
+    justify-content: center;
+    padding-top: 10%;
+    font-family: "Pathway Gothic One",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    color: rgba(194, 112, 188, 1);
+    text-transform: uppercase;
+    text-align: center;
+}
+.espressomartini:hover{
+    transform: scale(1.05, 1.05);
+    transition: 1s ease-out;
+    box-shadow: 0px 18px 16px 0px rgba(0, 0, 0, 0.2);
+}
+.mangobreeze{
+    background-color: rgba(243, 234, 207, 1);
+    border-radius: 3%;
+    width: 40%;
+    height: 90%;
+    cursor: pointer;
+}
+.mangobreeze h3{
+    display: grid;
+    justify-content: center;
+    padding-top: 13%;
+    font-family: "Pathway Gothic One",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    color: rgba(58, 132, 7, 1);
+    text-transform: uppercase;
+}
+.mangobreeze:hover{
+    transform: scale(1.05, 1.05);
+    transition: 1s ease-out;
+    box-shadow: 0px 18px 16px 0px rgba(0, 0, 0, 0.2);
+}
+.mojito{
+    background-color: rgba(249, 191, 220, 0.25);
+    border-radius: 3%;
+    width: 40%;
+    height: 90%;
+    cursor: pointer;
+}
+.mojito h3{
+    display: grid;
+    justify-content: center;
+    padding-top: 7%;
+    font-family: "Pathway Gothic One",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    color: rgba(169, 2, 79, 1);
+    text-transform: uppercase;
+}
+.mojito:hover{
+    transform: scale(1.05, 1.05);
+    transition: 1s ease-out;
+    box-shadow: 0px 18px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.mangohazz{
+    background-color: rgba(65, 39, 28, 0.25);
+    border-radius: 3%;
+    width: 40%;
+    height: 90%;
+    cursor: pointer;
+}
+.mangohazz h3{
+    display: grid;
+    justify-content: center;
+    padding-top: 10%;
+    font-family: "Pathway Gothic One",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    color: rgba(66, 37, 24, 1);
+    text-transform: uppercase;
+}
+.mangohazz:hover{
+    transform: scale(1.05, 1.05);
+    transition: 1s ease-out;
+    box-shadow: 0px 18px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.moscowmule{
+    background-color: rgba(37, 127, 72, 0.25);
+    border-radius: 3%;
+    width: 40%;
+    height: 90%;
+    cursor: pointer;
+}
+.moscowmule h3{
+    display: grid;
+    justify-content: center;
+    padding-top: 11%;
+    font-family: "Pathway Gothic One",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    color: rgba(4, 132, 74, 1);
+    text-transform: uppercase;
+}
+.moscowmule:hover{
+    transform: scale(1.05, 1.05);
+    transition: 1s ease-out;
+    box-shadow: 0px 18px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.drymartini{
+    background-color: rgba(244, 220, 208, 0.25);
+    border-radius: 3%;
+    width: 40%;
+    height: 90%;
+    cursor: pointer;
+}
+.drymartini h3{
+    display: grid;
+    justify-content: center;
+    padding-top: 8%;
+    font-family: "Pathway Gothic One",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    color: rgba(249, 154, 95, 1);
+    text-transform: uppercase;
+}
+.drymartini:hover{
+    transform: scale(1.05, 1.05);
+    transition: 1s ease-out;
+    box-shadow: 0px 18px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.whiskysour{
+    background-color: rgba(119, 4, 87, 0.25);
+    border-radius: 3%;
+    width: 40%;
+    height: 90%;
+    cursor: pointer;
+}
+.whiskysour h3{
+    display: grid;
+    justify-content: center;
+    padding-top: 10%;
+    font-family: "Pathway Gothic One",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    color: rgba(119, 0, 91, 1);
+    text-transform: uppercase;
+}
+.whiskysour:hover{
+    transform: scale(1.05, 1.05);
+    transition: 1s ease-out;
+    box-shadow: 0px 18px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.pinocolada{
+    background-color: rgba(48, 77, 26, 0.25);
+    border-radius: 3%;
+    width: 40%;
+    height: 90%;
+    cursor: pointer;
+}
+.pinocolada h3{
+    display: grid;
+    justify-content: center;
+    padding-top: 10%;
+    font-family: "Pathway Gothic One",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    color: rgba(41, 74, 23, 1);
+    text-transform: uppercase;
+}
+.pinocolada:hover{
+    transform: scale(1.05, 1.05);
+    transition: 1s ease-out;
+    box-shadow: 0px 18px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.strawberrydaiquiri{
+    background-color: rgba(61, 134, 0, 0.25);
+    border-radius: 3%;
+    width: 40%;
+    height: 90%;
+    cursor: pointer;
+}
+.strawberrydaiquiri h3{
+    display: grid;
+    justify-content: center;
+    padding-top: 10%;
+    font-family: "Pathway Gothic One",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    color: rgba(143, 169, 24, 1);
+    text-transform: uppercase;
+    text-align: center;
+}
+.strawberrydaiquiri:hover{
+    transform: scale(1.05, 1.05);
+    transition: 1s ease-out;
+    box-shadow: 0px 18px 16px 0px rgba(0, 0, 0, 0.2);
+}
+.pornstarmartini{
+    background-color: rgba(237, 206, 211, 0.25);
+    border-radius: 3%;
+    width: 40%;
+    height: 90%;
+    cursor: pointer;
+}
+.pornstarmartini h3{
+    display: grid;
+    justify-content: center;
+    padding-top: 13%;
+    font-family: "Pathway Gothic One",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    color: rgba(239, 60, 93, 1);
+    text-transform: uppercase;
+    text-align: center;
+}
+.pornstarmartini:hover{
+    transform: scale(1.05, 1.05);
+    transition: 1s ease-out;
+    box-shadow: 0px 18px 16px 0px rgba(0, 0, 0, 0.2);
+}
+.longisland{
+    background-color: rgba(235, 254, 104, 0.25);
+    border-radius: 3%;
+    width: 40%;
+    height: 90%;
+    cursor: pointer;
+}
+.longisland h3{
+    display: grid;
+    justify-content: center;
+    padding-top: 13%;
+    font-family: "Pathway Gothic One",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    color: rgba(242, 213, 28, 1);
+    text-transform: uppercase;
+    text-align: center;
+}
+.longisland:hover{
+    transform: scale(1.05, 1.05);
+    transition: 1s ease-out;
+    box-shadow: 0px 18px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+
+/*--Her arbejder jeg med selve den side hvor flaske bliver præsenteret og der vil være tekst--*/
+#flaskemedtekst{
+    background-color: #fff;
+}
+.flasketopmango{
+    width: 100%;
+    height: 700px;
+    background-color: rgba(245, 235, 208, 1);
+    display: flex;
+}
+.flaskebundmango{
+    width: 100%;
+    background-color: rgba(58, 132, 7, 1);
+    text-align: center;
+}
+.flaskenederstmango{
+    background-color: rgba(245, 235, 208, 1);
+    text-align: center;
+}
+.flasketop{
+    width: 100%;
+    height: 700px;
+    background-color: rgba(65, 39, 28, 0.25);
+    display: flex;
+}
+.flaskebund{
+
+    background-color: rgba(66, 37, 24, 1);
+    text-align: center;
+}
+.flaskediv{
+width: 25%;
+height: 100%;
+position: relative;
+right: 5%;
+animation: flyvendeflaske 1s ease-in-out;
+}
+.mobilflaske{
+    position: relative;
+    right: 30px;
+    top: 40px;
+    width: 100%;
+}
+.alttekst{
+width: 75%;
+height: 90%;
+position: relative;
+top: 15%;
+}
+.flasketop h1{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: rgba(66, 37, 24, 1);
+    font-size: 70px;
+    text-align: center;
+    letter-spacing: 5px;
+}
+.flasketop h2{
+    font-family: 'Caesar Dressing', cursive;
+    padding: 10px 80px;
+    letter-spacing: 10px;
+    color: rgba(66, 37, 24, 1);
+    text-align: center;
+}
+.flasketop p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 100;
+    color: rgba(66, 37, 24, 1);
+    font-size: 25px;
+    text-align: center;
+    margin-top: 5%;
+}
+.paragraf{
+    width: 70%;
+    padding-left: 15%;
+    text-align: center;
+}
+
+/*--Vi arbejder stadig med siden der præsentere flasken, men herunder er der fokus på den nederste del--*/
+.flaskebund h1{
+    font-family: 'Caesar Dressing', cursive;
+    color: #fff;
+    font-size: 70px;
+    text-align: center;
+}
+.flaskebund p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 100;
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+}
+.flaskebund h1{
+padding-top: 2%;
+}
+.cocktaillinje{
+    display: flex;
+    justify-content: space-evenly;
+}
+.cocktailkort{
+    height: 100%;
+    width: 30%;
+    text-align: center;
+    margin-top: 3%;
+}
+.cocktailkort h2{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+}
+.cocktailkort button{
+    font-family: 'Caesar Dressing', cursive;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: 8px 8px;
+    border-radius: 2%;
+    font-size: 20px;
+    width: 40%;
+    margin-top: 2%;
+    cursor: pointer;
+}
+.flaskebund button:nth-child(4){
+    font-family: 'Caesar Dressing', cursive;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: 8px 8px;
+    border-radius: 2%;
+    font-size: 25px;
+ 
+    margin-top: 2%;
+    cursor: pointer;
+}
+
+.cocktailkort button:hover, .flaskebund button:hover{
+    transform: scale(1.05, 1.05);
+    transition: 1s ease-out;
+    color: #000;
+    border: 2px solid #fff;
+
+}
+
+
+
+#tilbageknap{
+    background-color: transparent;
+    border: none;
+    font-size: 40px;
+    height: auto;
+    position: relative;
+    top: 70px;
+    right: 12%;
+    color: #000;
+    cursor: pointer;
+}
+
+.flaskenederst{
+
+    background-color: rgba(65, 39, 28, 0.25);
+    text-align: center;
+}
+.flaskenederst h1{
+    font-family: 'Caesar Dressing', cursive;
+    color: rgba(66, 37, 24, 1);
+    font-size: 70px;
+    text-align: center;
+    padding-top: 2%;
+}
+.flaskenederst td{
+    border-bottom: 1px solid #fff;
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 100;
+    text-align: left;
+    color: rgba(66, 37, 24, 1);
+    padding: 15px 15px;
+}
+.flaskenederst th{
+    font-size: 35px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    text-align: left;
+    color: rgba(66, 37, 24, 1);
+    text-transform: uppercase;
+}
+.flaskenederst table{
+    width: 90%;
+    padding-top: 5%;
+    padding-left: 5%;
+}
+
+/*MANGO*/
+.flasketopmango h1{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: rgba(58, 132, 7, 1);
+    font-size: 70px;
+    text-align: center;
+    letter-spacing: 5px;
+}
+.flasketopmango h2{
+    font-family: 'Caesar Dressing', cursive;
+    padding: 10px 80px;
+    letter-spacing: 10px;
+    color: rgba(66, 37, 24, 1);
+    text-align: center;
+}
+.flasketopmango p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 100;
+    color: rgba(66, 37, 24, 1);
+    font-size: 25px;
+    text-align: center;
+    margin-top: 5%;
+}
+.flaskebundmango h1{
+    font-family: 'Caesar Dressing', cursive;
+    color: #fff;
+    font-size: 70px;
+    text-align: center;
+}
+.flaskebundmango p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 100;
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+}
+.flaskebundmango h1{
+padding-top: 2%;
+}
+.flaskenederstmango h1{
+    font-family: 'Caesar Dressing', cursive;
+    color: rgba(58, 132, 7, 1);
+    font-size: 70px;
+    text-align: center;
+    padding-top: 2%;
+}
+.flaskenederstmango td{
+    border-bottom: 1px solid #fff;
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 100;
+    text-align: left;
+    color: rgba(58, 132, 7, 1);
+    padding: 15px 15px;
+}
+.flaskenederstmango th{
+    font-size: 35px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    text-align: left;
+    color: rgba(58, 132, 7, 1);
+    text-transform: uppercase;
+}
+.flaskenederstmango table{
+    width: 90%;
+    padding-top: 5%;
+    padding-left: 5%;
+}
+.flaskebundmango button:nth-child(4){
+    font-family: 'Caesar Dressing', cursive;
+    background-color: #fff;
+    color: rgba(66, 37, 24, 1);
+    border: none;
+    padding: 8px 8px;
+    border-radius: 2%;
+    font-size: 25px;
+
+    margin-top: 2%;
+    cursor: pointer;
+}
+.drinkbundmango{
+    width: 100%;
+    height: 700px;
+    background-color: rgba(215, 174, 68, 0.25);
+    display: flex;
+}
+.drinkbundmango h1{
+    color: rgba(58, 132, 7, 1);
+}
+.drinkbundmango h2{
+    color: rgba(58, 132, 7, 1);
+}
+.drinkmidtmango{
+    width: 100%;
+    background-color: rgba(58, 132, 7, 1);
+    text-align: left;
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 5%;
+}
+
+
+
+
+
+
+
+
+
+
+/*--ALt herunder handler om siden med drinks på--*/
+.drinkbund{
+    width: 100%;
+    height: 700px;
+    background-color: rgba(65, 39, 28, 0.25);
+    display: flex;
+}
+.drinkmidt{
+    width: 100%;
+    background-color: rgba(66, 37, 24, 1);
+    text-align: left;
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 5%;
+}
+.drinkdiv{
+    width: 25%;
+    height: 100%;
+    position: relative;
+    right: 3%;
+}
+.paragraf button{
+    font-family: 'Caesar Dressing', cursive;
+    background-color: #fff;
+    color: rgba(66, 37, 24, 1);
+    border: none;
+    padding: 20px 20px;
+    border-radius: 2%;
+    font-size: 20px;
+    width: 50%;
+    margin-top: 2%;
+    cursor: pointer;
+}
+.ingredienser{
+
+    width: 45%;
+}
+.ingredienser td{
+    border-bottom: 1px solid #fff;
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 100;
+    text-align: left;
+    color: #fff;
+    padding: 15px 15px;
+}
+.ingredienser th{
+    font-size: 35px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    text-align: left;
+    color: #fff;
+    text-transform: uppercase;
+}
+.ingredienser table{
+    width: 100%;
+    padding-top: 10%;
+}
+.ingredienser h1{
+    font-family: 'Caesar Dressing', cursive;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 5%;
+    letter-spacing: 5px;
+}
+.næringsindhold{
+    height: 100%;
+    width: 45%;
+}
+.drinkbund p{
+    text-transform: uppercase;
+}
+.drinkbund img{
+    padding-left: 45%
+}
+.checked{
+    color: orange;
+}
+span{
+    color: #000;
+}
+
+
+
+/*--ALt herunder handler om Footer--*/
+.flaskefooter{
+    background-color: rgba(0, 74, 164, 1);
+    width: auto;
+    font-weight: 800;
+    display: flex;
+}
+.flaskefooter a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+}
+.footervenstre{
+    width: 50%;
+    color: #fff;
+    margin-left: 2%;
+    padding-top: 1.3%;
+}
+hr{
+    border-style: solid;
+    border-width: 3px;
+    border-color: rgba(54, 118, 195, 1);
+    margin-top: 10px;
+    width: 80%;
+}
+.pfooter{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #fff;
+    letter-spacing: 1px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-left: 2%;
+    width: 80%;
+}
+.footer{
+    display: flex;
+    align-items: center;
+}
+.imagefooter{
+    width: 12%;
+}
+.footerhøjre{
+    width: 200px;
+    color: #fff;;
+    padding-top: 1.3%;
+    margin-left: 25%;
+    text-transform: uppercase;
+}
+#ikonersome{
+    margin-top: 5%;
+    margin-left: 3%;
+}
+#ikonermobil{
+    height:auto;
+    padding: 5% 5%;
+    justify-content: center;
+}
+
+/*--ANIMATION--*/
+
+@keyframes flyvendeflaske{
+    from{right: -500px;}
+    to{right: 0px;}
+}
+
+/*-------------------------RESPONSIVE-------------------------*/
+
+/*--LAPTOP LAYOUT--*/
+@media screen and (min-width:874px){
+    .ydreflasketo{
+        display: flex;
+    }
+    .ydreflaske{
+        display: flex;
+    }
+    #ikonermobil{
+        display: none;
+    }
+    .mobilflaske{
+        display: none;
+    }
+   #mobilevideo{
+    display: none;
+   }
+   .ydrecocktails{
+    display: flex;
+   }
+   .ydrecocktailsto{
+    display: flex;
+   }
+    #mobilmoscowmule{
+    display: none;
+   }
+    .mobil{
+    display: none;
+   }
+}
+
+
+
+/*--MOBIL LAYOUT--*/
+@media screen and (max-width:874px){
+    #mainvideo{
+        display: none;
+    }
+    /*--cocktailside--*/
+    .ydrecocktailsto{
+        display: block;
+    }
+    .ydrecocktails{
+        display: flex;
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+    .laptop{
+        display: none;
+    }
+    .ydrecocktails h3{
+        font-size: 90%;
+    }
+
+
+
+    /*--Varianter--*/
+    .ydreflasketo{
+        display: block;
+    }
+    .ydreflaske{
+        display: flex;
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+    .footervenstre{
+        display: none;
+    }
+    .footerhøjre{
+        display: none;
+    }
+    #ikonermobil{
+        display: flex;
+    }
+    .imagefooter{
+        width: 5%;
+    }
+    /*--Flaskeside--*/
+    .laptopflaske{
+        display: none;
+    }
+    .flasketop h1{
+        font-size: 25px;
+    }
+    .flasketop h2{
+        font-size: 15px;
+    }
+    .drinkbund p{
+        font-size: 12px;
+        width: 70%;
+    }
+    .flasketop p{
+        font-size: 15px;
+        text-align: center;
+        padding-right: 25%;
+    }
+    .flaskebund h1{
+        font-size: 35px;
+    }
+    .flaskebund p{
+        font-size: 15px;
+    }
+
+    .cocktaillinje{
+        display: block;
+        text-align: center;
+    }
+    .cocktailkort{
+        width: 100%;
+    }
+    .cocktailkortbillede{
+        width: 80%;
+    }
+    .flaskenederst h1{
+        font-size: 35px;
+    }
+    .flaskenederst td{
+        font-size: 10px;
+    }
+    .flaskenederst th{
+        font-size: 18px;
+    }
+    .paragraf{
+        width: 100%;
+        margin-left: 15%;
+        text-align: center;
+    }
+    #tilbageknap{
+        right: 40%;
+    }
+    .flaskebund button:nth-child(4){
+        margin-bottom: 3%;
+    }
+    .flasketop{
+        height: 500px;
+        justify-content: center;
+    }
+ 
+    /*MANGO-delen*/
+    .flaskebundmango button:nth-child(4){
+        margin-bottom: 3%;
+    }
+    .flasketopmango{
+        height: 500px;
+    }
+    .flaskenederstmango h1{
+        font-size: 35px;
+    }
+    .flaskenederstmango td{
+        font-size: 10px;
+    }
+    .flaskenederstmango th{
+        font-size: 18px;
+    }
+    .flasketopmango h1{
+        font-size: 25px;
+    }
+    .flasketopmango h2{
+        font-size: 15px;
+    }
+    .flasketopmango p{
+        font-size: 15px;
+        padding-right: 25%;
+    }
+    .flaskebundmango h1{
+        font-size: 35px;
+    }
+    .flaskebundmango p{
+        font-size: 15px;
+    }
+
+     /*Drink side - Espresson*/
+     .drinkmidt{
+        display: block;
+     }
+     .ingredienser{
+        width: 90%;
+        padding-left: 5%;
+     }
+     .ingredienser td{
+        font-size: 15px;
+    }
+    .ingredienser th{
+        font-size: 20px;
+    }
+    .ingredienser h1{
+        font-size: 25px;
+    }
+    .drinkbund{
+        height: 500px;
+    }
+    
+     /*Drink side - Mangosoda*/
+     .drinkmidtmango{
+        display: block;
+     }
+     .drinkbundmango{
+        height: 500px;
+     }
+     .flaskediv{
+        padding-left: 5%;
+     }
+     .drinkdiv{
+        display: none;
+     }
+
+}
